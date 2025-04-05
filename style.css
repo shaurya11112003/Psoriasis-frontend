@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.btn-login:hover {
+    color: #e50914;
+}
+
+.btn-login {
+    padding: 5px 10px;
+    border: 1px solid #e50914;
+    border-radius: 4px;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #e50914;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #b0060f;
+}
+.form-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: 2px solid #e50914;
+}
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-weight: bold;
+    opacity: 0.95;
+}
+
+.toast-success {
+    background-color: #28a745;
+}
+
+.toast-error {
+    background-color: #dc3545;
+}
+
+.toast-info {
+    background-color: #17a2b8;
+}
+.intro {
+    padding: 50px;
+    background-color: #1c1c1c;
+    color: #ccc;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #e50914;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #111;
+    color: #777;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+.hero {
+    margin-top: 80px; /* Same as navbar height */
+    height: calc(100vh - 80px); /* Full screen minus header */
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2)),
+                url('image/backg.jpg') center/cover no-repeat;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;       /* Default */
+background-position: top left;     /* Show top-left corner */
+background-position: center bottom;/* Show bottom center */
+background-position: 50% 30%;      /* Precise control */
+
+}
+
+.navbar {
+    position: fixed; /* Or use sticky */
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    z-index: 1000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
